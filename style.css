@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h2{
+    color: rgb(95, 95, 233);
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    margin-bottom: 36px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, h1, a{
+    background-color: rgb(95, 95, 233);
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.apresentacao{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.apresentacao img{
+    max-width: 360px;
+}
+
+.apresentacao-text{
+    padding: 0 24px;
+    
+}
+
+.sombra{
+    margin-top: 12px;
+    border-bottom: 2px solid rgb(95, 95, 233);
+    margin-bottom: 32px;
+}
+
+.produto li {
+    list-style: none;
+}
+
+.produto img{
+    width: 100%;
+}
+
+.produto{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1.3%;
+    margin-bottom: 32px;
+}
+
+.produto h3{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.produto p{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.produto button{
+    width: 100%;
+    padding: 6px;
+    color: white;
+    background-color: rgb(95, 95, 233);
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.produto button:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 80%;
+    }
+
+    .apresentacao img{
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .apresentacao{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .apresentacao-text{
+        padding: 0;
+    }
+
+    .produto{
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 2%;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .container{
+        max-width: 80%;
+    }
+    
+    .apresentacao{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .apresentacao img{
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .apresentacao-text{
+        padding: 0;
+    }
+
+    .produto{
+        display: block;
+    }
+
+    header, h1, a{
+        background-color: rgb(95, 95, 233);
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
