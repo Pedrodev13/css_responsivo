@@ -119,6 +119,10 @@ header, h1, a{
         column-gap: 2%;
         margin-bottom: 32px;
     }
+
+    .produto button:hover{
+        transform: none;
+    }
 }
 
 @media screen and (max-width:640px){
@@ -149,5 +153,9 @@ header, h1, a{
         color: white;
         font-weight: bold;
         text-decoration: none;
+    }
+
+    .produto button:hover{
+        transform: none;
     }
 }
